@@ -10,7 +10,7 @@ interface ContentPageProps {
 export const ContentPage: React.FunctionComponent<ContentPageProps> = (props) => {
     return (
         <div className="page-container">
-            <Header/>
+            <Header pageEnum={props.pageEnum}/>
             <div className="content-container">
                 {props.children}
             </div>
