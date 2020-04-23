@@ -11,6 +11,7 @@ export const Header: React.FunctionComponent = () => {
                 <Link to="/" className="page-link">Home</Link>
                 <Link to="/shop" className="page-link">Shop</Link>
                 <Link to="/contact" className="page-link">Contact</Link>
+                <Link to="/login" className="page-link">Sign In</Link>
             </div>
         </div>
     );
