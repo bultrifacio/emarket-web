@@ -5,8 +5,12 @@ import {Router} from "@reach/router";
 import {Profile} from "./components/Page/Profile/Profile";
 import 'antd/dist/antd.css';
 import {Login} from "./components/Page/Login/Login";
+import enableRequestInterceptor from "./shared/interceptors/requestInterceptor";
 
-function App() {
+const App: React.FunctionComponent = () => {
+
+    enableRequestInterceptor();
+
     return (
         <div className="App">
             <Router>

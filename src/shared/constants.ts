@@ -1,0 +1,16 @@
+const CONSTANTS = {
+    AUTHORIZATION_TOKEN_KEY: 'eMarket_token',
+    HTTP_CODES: {
+        NO_CONNECTION: 0,
+        BAD_REQUEST: 400,
+        UNAUTHORIZED: 401,
+        FORBIDDEN: 403,
+        SESSION_TIMEOUT: 440,
+        NOT_FOUND: 404,
+        CONFLICT: 409,
+        INTERNAL_SERVER_ERROR: 500,
+    },
+    DEDUPING_INTERVAL: 10000,
+};
+
+export default CONSTANTS;

@@ -10,7 +10,7 @@ export const Profile: React.FunctionComponent<RouteComponentProps> = () => {
         <ContentPage pageEnum={PageEnum.PROFILE}>
             <div className="profile">
                 <div className="container">
-                    <Card title="User info">
+                    <Card title="Credentials info">
                         <Descriptions bordered>
                             <Descriptions.Item label="Email">Zhou Maomao</Descriptions.Item>
                             <Descriptions.Item label="Telephone">1810000000</Descriptions.Item>

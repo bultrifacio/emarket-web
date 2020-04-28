@@ -1,17 +1,17 @@
 import React from "react";
-import {RouteComponentProps} from "@reach/router";
+import {navigate, RouteComponentProps} from "@reach/router";
 import {ContentPage} from "../../Interface/ContentPage/ContentPage";
 import {PageEnum} from "../../../shared/enum/PageEnum";
 
 import {Button, Form, Input} from 'antd';
-import {userService} from "../../../shared/service/auth.service";
-import {User} from "../../../shared/model/User";
+import {Credentials} from "../../../shared/model/Credentials";
+import {login} from "../../../shared/service/auth.service";
 
 export const Login: React.FunctionComponent<RouteComponentProps> = () => {
 
     const onFinish = (values: any) => {
-        const user: User = values;
-        userService.login(user).then((response: User) => console.log(response));
+        const user: Credentials = values;
+        login(user).then(() => navigate('/profile'));
     };
 
     return (
